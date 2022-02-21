@@ -1,0 +1,315 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Medidores CO2 Maker</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black-nocaps.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<!-- portada -->
+				<section data-background="white">
+					<h1>Medidores CO<sub>2</sub> <span style="color:red; font-style: italic;">Maker</span></h1>
+					<h3 style="color:gray;">para combatir la pandemia<br>COVID-19</h3>
+				</section>
+				<!-- fin portada -->
+
+				<!-- teoría -->
+				<section>
+
+				<section>
+					<h1>hablemos sobre ...</h1>
+				</section>
+				<section data-background="images/covid19.jpg"></section>
+				<section data-background="images/joseluisjimenez.jpg"></section>
+				<section>
+					<h1>AEROSOLES</h1>
+					<blockquote class="fragment">
+						&ldquo;... entre el 75% y el 99% de contagios&rdquo;
+					</blockquote>
+					<p class="fragment">a pesar de la negación de la <b>OMS</b> y otras fuentes ... <span class="fragment"><br/><strong style="color: red;">probado</strong> científicamente</span></p>
+				</section>
+				<section data-background="images/aireamos.png"></section>
+				<section>
+					<h1>CO<sub>2</sub></h1>
+					<p class="fragment">medida indirecta</br>
+					<span class="fragment">de <em>aire compartido</em></span></p>
+					<br/>
+					<p class="fragment" style="font-size: 70%;">además...<span class="fragment" style="color: orange;"> el CO<sub>2</sub> ¡es nocivo!</span></p>
+				</section>
+				<section>
+					<h1>Sensores de CO<sub>2</sub></h1>
+					<p class="fragment">tipos <span style="color:gray; font-size: 70%;">(químicos vs 
+						<a href="https://es.wikipedia.org/wiki/Sensor_de_Infrarrojo_No_Dispersivo" target="_blank">NDIR</a>)</span></p>
+					<p class="fragment">unidades de medida <span style="color:gray; font-size: 70%;">
+						(<a href="https://es.wikipedia.org/wiki/Partes_por_mill%C3%B3n" target="_blank">PPM</a>)</span></p>
+					<p class="fragment">colocación</p>
+					<p class="fragment">fabricantes <span style="color:gray; font-size: 70%;">(y precios)</span></p>
+				</section>
+				<section>
+					<h1>Valores CO<sub>2</sub></h1>
+					<img src="images/valoresco2.jpg" class="fragment">
+				</section>
+				<section>
+					<h1 style="color:red;">VENTILA<span style="color:white;">(C)</span>CIÓN!!</h1>
+				</section>
+				<section>
+					<h1>Rangos CO<sub>2</sub></h1>
+					<p style="color: green;">hasta <b>700 PPM</b></p>
+					<p style="color: orange;">entre <b>700 y 800 PPM</b></p>
+					<p style="color: red;">más de <b>800 PPM</b></p>
+				</section>
+				<section>
+					<h1>Aparatos de medida</h1>
+					<h2 class="fragment">
+						<span style="color:yellow;">Autofabricación</span><br/>
+						<span style="font-size:60%; color: gray;">vs</span><br/>
+						<span style="color:red;">P. comerciales</span>
+					</h2>
+				</section>
+
+				</section>
+				<!-- fin teoría -->
+
+				<!-- práctica -->
+				<section data-background="white">
+
+				<section>
+					<h1>manos a la obra!</h1>
+				</section>
+				<section data-background="white">
+					<h1>Sensirion SCD30</h2>
+					<div style="float:left;"><img src="images/scd30.jpg"></div>
+					<p style="padding-top: 180px;">
+						elementos</br>
+						<span class="fragment">precios</span></br>
+						<a href="https://sensirion.com/media/documents/84D49268/616536CB/Sensirion_CO2_Sensors_SCD30_Design-In_Guidelines_D1.pdf" target="_blank" class="fragment">guía de diseño</a><br/>
+						<a href="https://sensirion.com/media/documents/33C09C07/620638B8/Sensirion_SCD30_Field_Calibration.pdf" target="_blank" class="fragment">calibración</a>
+					</p>
+				</section>
+				<section>
+					<h1>PRÁCTICA</h1>
+					<ul>
+						<li><a href="https://www.arduino.cc/en/software" target="_blank">Entorno de desarrollo Arduino IDE</a></li>
+						<li><a href="https://www.luisllamas.es/programar-esp8266-con-el-ide-de-arduino/" target="_blank">NodeMCU/ESP-8266 en Arduino IDE</a></li>
+						<li>Bibliotecas Arduino:
+							<ul>
+								<li><b>SparkFun SCD30</b> (sensor CO<sub>2</sub>)</li>
+								<li><b>Adafruit Neopixel</b> (LED RGB)</li>
+							</ul>
+						</li>
+						<li><a href="#2/4">Esquema de conexión</a></li>
+					</ul>
+				</section>
+				<section>
+					<p>NodeMCU Lolin v3 - ESP8266 pinout
+					<img src="images/nodemcu-v3-pinout.png" style="max-height: 450px;">
+				</section>
+				<section>
+					<h1>Conexionado</h1>
+					<img src="images/conexionado.png" style="max-height: 500px;">
+				</section>
+				<section>
+					<h1>Alimentación</h1>
+					<img src="images/powerBank.jpg" style="max-height: 350px;">
+					<p>Adaptación de PowerBank basada en 
+						<a href="https://www.roboteach.es/modificacion-power-bank/" target="_blank">esta guía</a>
+					</p>
+					<p style="font-size:50%;">
+						<strong>NOTA:</strong> +5V del powerBank &#8594; Vin en la NodeMCU y Vcc en el neopixel. <strong>VU quedará desconectado</strong>.
+					</p>
+				</section>
+				<section>
+					<h1>Carcasa 3D</h1>
+					<img src="images/scd30-unit.png" style="max-height: 350px;">
+					<p>disponible en <a href="https://github.com/mgesteiro/medidorCO2/" target="_blank">el respositorio</a></p>
+				</section>
+				<section>
+					<h1>Código</h1>
+					<pre><code class="hljs" class="language-ino" data-line-numbers>/*
+ * Aparato de medición CO2
+ * 
+ * WiFi "CO2Sensor" (sin clave)
+ * http://192.168.4.1
+ * 
+ */
+
+#include &lt;ESP8266WiFi.h&gt;
+#include &lt;WiFiClient.h&gt;
+#include &lt;ESP8266WebServer.h&gt; 
+
+// Sensor SDC30
+#include &lt;Wire.h&gt;
+#include "SparkFun_SCD30_Arduino_Library.h"
+SCD30 airSensor;
+
+// Neopixel
+#include &lt;Adafruit_NeoPixel.h&gt;
+#define PIN       D6
+#define NUMPIXELS 1
+
+Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
+
+const char *ssid = "CO2Sensor";
+
+ESP8266WebServer server(80);
+
+#define BUZZER D8
+
+int nivelCO2_ideal=700;
+int nivelCO2_peligro=800;
+uint16_t  nivelCO2;
+float temperatura, humedad;
+long tiempo, tCO2=0, talarma=0;
+bool alarma=false;
+
+/*
+ * Devuelve los valores numéricos en una página HTML
+ */
+void handleRoot() {
+  // Respuesta web
+  char respuesta[250];
+  sprintf(respuesta, "&lt;html&gt;&lt;head&gt;&lt;title&gt;Sensor CO2&lt;/title&gt;&lt;meta http-equiv=\"refresh\" content=\"2\" /&gt;&lt;/head&gt;&lt;body style=\"font-size:200%%;\">Nivel CO2(ppm): %d&lt;br&gt;Temperatura(C): %.1f&lt;br&gt;Humedad(%%): %.1f&lt;/body&gt;&lt;/html&gt;", nivelCO2, temperatura, humedad);
+
+  server.send(200, "text/html", respuesta);
+} // handleRoot()
+
+
+void setup() {
+  pinMode(BUZZER, OUTPUT);
+  delay(2000); // darle tiempo al sensor
+  Serial.begin(115200);
+  Serial.println();
+  Serial.println("Inicializando medidor CO2 wifi ...");
+
+  Wire.begin();
+
+  if (airSensor.begin() == false) {
+    Serial.println("Sensor no detectado: por favor comprueba el conexionado. Sistema detenido.");
+    while (1);
+  }
+
+  pixels.begin(); // Inicializar NeoPixel
+  pixels.clear(); // Todos los pixel sin color (= 0,0,0)
+  pixels.show();  // Mostramos
+  
+  // arrancamos wifi
+  WiFi.softAP(ssid);
+
+  // indicamos nuestra propia IP por el puerto serie
+  IPAddress myIP = WiFi.softAPIP();
+  Serial.print("Entra en http://");
+  Serial.println(myIP);
+  
+  // servimos la página web
+  server.on("/", handleRoot);
+  server.begin();
+  Serial.println("Servidor web iniciado");
+}
+
+void loop() {
+  // atendemos las peticiones web
+  server.handleClient();
+
+  // eventos temporizados
+  tiempo=millis();
+
+  // Buzzer (pita una vez cada segundo si estamos en zona roja)
+  if(alarma==true) {
+    if ((tiempo-talarma)>1000) talarma=tiempo;
+
+    if((tiempo-talarma)<100) digitalWrite(BUZZER, HIGH);
+    else digitalWrite(BUZZER, LOW);
+  }
+
+  // Medida de CO2
+  if ((tiempo-tCO2)<2000) return;
+  
+  tCO2=tiempo;
+  
+  if (airSensor.dataAvailable()) {
+    nivelCO2=airSensor.getCO2();
+    temperatura=airSensor.getTemperature();
+    humedad=airSensor.getHumidity();
+  
+    // Los indicamos por el puerto serie también
+    Serial.print("CO2(ppm): ");
+    Serial.print(nivelCO2);
+    Serial.print(" Temperatura(C): ");
+    Serial.print(temperatura, 1);
+    Serial.print(" Humedad(%): ");
+    Serial.println(humedad, 1);
+    
+    if (nivelCO2<=nivelCO2_ideal) {
+      pixels.setPixelColor(0, pixels.Color(0, 127, 0)); // Color VERDE
+      pixels.show();
+      alarma=false;
+      digitalWrite(BUZZER, LOW); // por si estaba encendido
+    }
+    if (nivelCO2 > nivelCO2_ideal && nivelCO2 < nivelCO2_peligro) {
+      pixels.setPixelColor(0, pixels.Color(127, 50, 0)); // Color NARANJA
+      pixels.show(); 
+      alarma=false;
+      digitalWrite(BUZZER, LOW); // por si estaba encendido
+    }
+    if (nivelCO2>nivelCO2_peligro) {
+      pixels.setPixelColor(0, pixels.Color(127, 0, 0)); // Color ROJO
+      pixels.show();
+      alarma=true;
+    }
+  } else {
+    Serial.println("Esperando nuevos datos ...");
+  }
+}
+					</code></pre>
+					<p>disponible en <a href="https://github.com/mgesteiro/medidorCO2/" target="_blank">el respositorio</a></p>
+				</section>
+			</section>
+			<!-- fin práctica -->
+			<section>
+					resultado
+					<img src="images/resultado.jpg">
+			</section>
+			<section>
+				<h1>Referencias:</h1>
+				<ul>
+					<li><a href="https://www.luisllamas.es/esp8266-nodemcu/" target="_blank">NodeMCU</a> - Luis Llamas</li>
+					<li><a href="https://www.arduino.cc/en/software" target="_blank">Arduino IDE</a> (Entorno de Desarrollo Integrado)</li>
+					<li><a href="https://www.luisllamas.es/programar-esp8266-con-el-ide-de-arduino/" target="_blank">ESP8266 con el IDE de Arduino</a> - Luis Llamas</li>
+					<li>NodeMCU Lolin v3: <a href="https://www.theengineeringprojects.com/2018/10/introduction-to-nodemcu-v3.html" target="_blank"><strong>VU vs Vin</strong></a> y 
+						<a href="https://arduino.stackexchange.com/questions/75645/vin-vu-pins-of-nodemcu-v3" target="_blank">VU and Vin</a></li>
+					<li><a href="https://sensirion.com/products/catalog/SCD30/" target="_blank">Sensirion SCD30</a> (CO<sub>2</sub> NDIR sensor)</li>
+					<li><a href="https://github.com/mgesteiro/medidorCO2" target="_blank">Repositorio del proyecto</a></li>
+				</ul>
+			</section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				progress: false,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
