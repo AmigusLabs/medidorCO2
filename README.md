@@ -6,7 +6,7 @@ Aparato de medida de CO<sub>2</sub> para combatir la pandemia COVID-19.
 Proyecto **Open-Source** y **Open-Hardware** (consulta la [licencia](#licencia--license)).
 
 
-* **[Presentación](presentacion/):** información, objetivos, justificación y materiales.
+* **[Presentación](presentacion/):** información, objetivos, justificación y materiales ([ver *on-line*](https://mgesteiro.github.io/medidorCO2/)).
 * **[Montaje](montaje/):** esquema de pines y conexionado.
 * **[3D](3D/):** carcasa diseñada en [FreeCAD](https://freecadweb.org) lista para imprimir.
 * **[Código](codigo/):** para el *NodeMCU Lolin v3* usando el IDE de Arduino.
