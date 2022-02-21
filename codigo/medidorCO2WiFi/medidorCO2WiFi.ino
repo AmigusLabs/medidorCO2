@@ -124,7 +124,7 @@ void loop() {
       alarma=false;
       digitalWrite(BUZZER, LOW); // por si estaba encendido
     }
-    if (nivelCO2>nivelCO2_peligro) {
+    if (nivelCO2>=nivelCO2_peligro) {
       pixels.setPixelColor(0, pixels.Color(127, 0, 0)); // Color ROJO
       pixels.show();
       alarma=true;
