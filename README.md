@@ -14,6 +14,18 @@ Proyecto **Open-Source** y **Open-Hardware** (consulta la [licencia](#licencia--
 ![Montaje](montaje/montaje_medidor_CO2_powerbank.png)
 
 
+## Listado de materiales
+
+* 1x Sensor CO2, temperatura y humedad tipo NDIR: Sensirion SCD30
+* 1x NodeMCU Lolin v3
+* 1x Buzzer activo 5V
+* 1x Neopixel individual con pines
+* 12x Cables dupont 10 cm hembra-hembra
+* 1x Interruptor (Rocker switch)
+* 1x PowerBank DIY
+* 1x batería 18650
+* 1x Caja 3D para contener el kit
+
 ## LICENCIA / LICENSE
 
 Este trabajo esta sujeto a la licencia [GNU General Public v3.0 License](LICENSE-GPLV30). Todos los ficheros multimedia y de datos que no sean código fuente están sujetos a la licencia [Creative Commons Attribution 4.0 BY-SA license](LICENSE-CCBYSA40).
