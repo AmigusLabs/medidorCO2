@@ -8,11 +8,15 @@ Proyecto **Open-Source** y **Open-Hardware** (consulta la [licencia](#licencia--
 
 * **[Presentación](presentacion/):** información, objetivos, justificación y materiales ([ver *on-line*](https://mgesteiro.github.io/medidorCO2/)).
 * **[Montaje](montaje/):** esquema de pines y conexionado.
-* **[3D](3D/):** carcasa diseñada en [FreeCAD](https://freecadweb.org) lista para imprimir.
+* **[3D](3D/):** carcasa diseñada en [FreeCAD](https://freecadweb.org) lista para imprimir y montar.
 * **[Código](codigo/):** para el *NodeMCU Lolin v3* usando el IDE de Arduino.
 
 ![Montaje](montaje/montaje_medidor_CO2_powerbank.png)
 
+## Alimentación eléctrica
+El aparato se alimenta mediante un **PowerBANK-DIY adaptado** (tal y como se explica en [esta guía](https://www.roboteach.es/modificacion-power-bank/)) que encaja perfectamente en la carcasa.
+
+![PowerBANK](presentacion/images/powerBank.jpg)
 
 ## Listado de materiales
 
@@ -20,11 +24,11 @@ Proyecto **Open-Source** y **Open-Hardware** (consulta la [licencia](#licencia--
 * 1x NodeMCU Lolin v3
 * 1x Buzzer activo 5V
 * 1x Neopixel individual con pines
-* 12x Cables dupont 10 cm hembra-hembra
+* 11x Cables dupont 10 cm hembra-hembra
 * 1x Interruptor (Rocker switch)
 * 1x PowerBank DIY
-* 1x batería 18650
-* 1x Caja 3D para contener el kit
+* 1x Batería 18650
+* 1x Carcasa 3D impresa para contener el kit
 
 ## LICENCIA / LICENSE
 
